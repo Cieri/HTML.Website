@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	template.htm
+	Copyright (c) 2020 by Jacquelyn Michele Cieri
+	All Rights Reserved
+	
+	A website assignment using Bootstrap 4.1.3
+	for course WEB125, HTML & CSS, at
+	HACC - Central Pennsylvania's Community College
+	Professor Carl R. Petersheim, M.S.
+-->
+
+<head>
+	<title>Thatz'a Pizza - Catering Menu</title>
+<!--
+    remember to change page title
+-->
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 3.3.1 Latest jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!-- 1.14.3 Latest Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+	<!-- Bootstrap v4.1.3 Latest compiled and minified CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Bootstrap v4.1.3 Complete JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap v4.1.3 Complete JavaScript Bundle -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+	 
+ 
+	<link rel="stylesheet" href="../styles/overrides.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+	<div class="container-fluid"> <!-- Corresponds to <main> tag in HTML5 -->
+	
+		<div class="row"> <!-- row 1, 1x12 cols wide, like header in HTML5 --> 
+			<div class="col-sm-12">
+				<h1>Thatz'a Pizza</h1>
+				<p class="subhead">Thatz'a Quality - Thatz'a Promise</p>
+			</div>
+		</div> <!-- end row 1 -->
+	
+		<nav class="navbar navbar-expand-md">
+              
+  <!-- Brand -->
+          <a class="navbar-brand" href="#">
+              <img src="../images/logo-nosubheading.png" alt="Logo" style="width:250px;">
+          </a>
+
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto float-right text-right pr-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.htm">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menu" data-toggle="dropdown">Thatz'a Menu</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="ulist.htm">Menu</a>
+                    <a class="dropdown-item active" href="table.htm">Catering Menu</a>
+                 </div>
+               </li>
+                
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="difference" data-toggle="dropdown">Thatz'a Difference</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="olist.htm">Quality Care</a>
+                    <a class="dropdown-item" href="gallery.htm">Gallery</a>
+                 </div>
+              </li>
+                
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="us" data-toggle="dropdown">Thatz'a Us</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="about.htm">Our Pizza Flippin' Background</a>
+                    <a class="dropdown-item" href="video.htm">Check Our Skills</a>
+                    <a class="dropdown-item" href="form.htm">Contact Us</a>
+                 </div>
+               </li>
+                
+            </ul>
+          </div>
+       </nav>
+    
+			
+		<div class="row"> <!-- row 2, 3x4 cols wide, like HMTL5 section -->
+			<div class="col-sm-4"> <!-- left column, like HTML5 article -->
+				<h2>Come Party With Us!</h2>
+                <p><img src="../images/cater.jpg" class="img-left-align-100"></p>
+				<p>Thatz'a&nbsp;Pizza loves to cater! We've created our catering menu to help get you started with planning your event. All of our catering options come from long-standing, family recipes you're sure to love, and we use only the freshest of ingredients.</p>
+                <p>Do you have a large event and aren't sure which caterer to trust with your special day? Have no fear, we've catered events as large as 500 guests, so we know how to get the job done right.</p>
+			</div> <!-- end left column -->
+            
+			<div class="col-sm-4"> <!-- middle column, like HTML5 article -->
+				<h2>Catering Menu</h2>
+                <table class="table table-striped">
+                    <thead><tr><th scope="col">What We Do Best</th><th scope="col">Half Tray Price</th><th scope="col">Full Tray Price</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">House Salad</th><td>19.99</td><td>34.99</td></tr>
+                        <tr><th scope="row">Caesar Salad</th><td>19.99</td><td>34.99</td></tr>
+                        <tr><th scope="row">Grilled Chicken Salad</th><td>29.99</td><td>54.99</td></tr>
+                        <tr><th scope="row">Baked Ziti</th><td>29.99</td><td>54.99</td></tr>
+                        <tr><th scope="row">Meatballs</th><td>29.99</td><td>54.99</td></tr>
+                        <tr><th scope="row">Chicken Parmesan</th><td>29.99</td><td>54.99</td></tr>
+                    </tbody>
+                    <tfoot><tr><td colspan="3">Please allow at least 24-hour advance notice for catering orders.</td></tr></tfoot>
+                </table>
+			</div> <!-- end middle column -->
+            
+			<div class="col-sm-4"> <!-- right column, like HTML5 article -->
+				<h2>Other Options</h2>
+                <p><img src="../images/ziti.jpg" class="img-left-align-100"></p>
+				<p>Don’t see something you like? Give us a call and talk with us about your event. We are happy to do something off the menu for you. In the past, we’ve catered breakfasts, which included dozens of breakfast-pizzas, and brunches, which included an array of soups and light snacks.</p>
+                <p>We also offer party subs, which come in two-foot increments and all of the fixings on the side. You can order them cut and arranged, or uncut and securely wrapped around impressive, six-foot boards.  </p>
+			</div> <!-- end right column -->
+		</div> <!-- end row 2 -->
+				
+		<div class="row"> <!-- row 3, 1x12 cols wide, like header in HTML5 --> 
+			<div class="col-sm-12">
+				<h3>Thatz'a Pizza</h3>
+				<p class="subhead">Thatz'a Quality - Thatz'a Promise</p>
+			</div>
+		</div> <!-- end row 3 -->
+		
+	</div> <!-- end container-fluid -->
+</body>
+
+</html>

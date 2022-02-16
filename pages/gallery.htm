@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	template_carousel.htm
+	Copyright (c) 2019 by FirstName MiddleName LastName
+	All Rights Reserved
+	
+	A website assignment using Bootstrap 4.3.1
+	for course WEB125, HTML & CSS, at
+	HACC - Central Pennsylvania's Community College
+	Professor Carl R. Petersheim, M.S.
+-->
+
+<head>
+    <title>Carousel Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap v4.3.1 Links and Courtesy of w3schools.com -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <style>
+      .carousel-inner img {
+          width: 100%;
+          height: auto;
+          margin: auto;
+      }
+    </style>
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" href="../styles/overrides.css">
+    <link rel="stylesheet" href="../styles/carousel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-fluid"> <!-- Corresponds to <main> tag in HTML5 -->
+	
+		<div class="row"> <!-- row 1, 1x12 cols wide, like <header> in HTML5 --> 
+			<div class="col-sm-12">
+				<h1>Thatz'a Pizza</h1>
+				<p class="subhead">Thatz'a Quality - Thatz'a Promise</p>
+			</div>
+		</div> <!-- end row 1 -->
+	
+		<nav class="navbar navbar-expand-md">
+              
+  <!-- Brand -->
+          <a class="navbar-brand" href="#">
+              <img src="../images/logo-nosubheading.png" alt="Logo" style="width:250px;">
+          </a>
+
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto float-right text-right pr-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.htm">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menu" data-toggle="dropdown">Thatz'a Menu</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="ulist.htm">Menu</a>
+                    <a class="dropdown-item" href="table.htm">Catering Menu</a>
+                 </div>
+               </li>
+                
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="difference" data-toggle="dropdown">Thatz'a Difference</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="olist.htm">Quality Care</a>
+                    <a class="dropdown-item active" href="gallery.htm">Gallery</a>
+                 </div>
+              </li>
+                
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="us" data-toggle="dropdown">Thatz'a Us</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="about.htm">Our Pizza Flippin' Background</a>
+                    <a class="dropdown-item" href="video.htm">Check Our Skills</a>
+                    <a class="dropdown-item" href="form.htm">Contact Us</a>
+                 </div>
+               </li>
+                
+            </ul>
+          </div>
+       </nav>
+			
+		<div class="row"> <!-- row 2, 12 cols wide, like HMTL5 section -->
+			<div class="col-sm-12"> <!-- single column, like HTML5 article -->
+ 		
+			<!-------------------Carousel begins ---------------------------->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				
+                <!-- Indicators -->
+				<ul class="carousel-indicators">
+				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				  <li data-target="#myCarousel" data-slide-to="1"></li>
+				  <li data-target="#myCarousel" data-slide-to="2"></li>
+				  <li data-target="#myCarousel" data-slide-to="3"></li>
+				  <li data-target="#myCarousel" data-slide-to="4"></li>
+				  <li data-target="#myCarousel" data-slide-to="5"></li>
+				</ul>
+
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+
+				  <div class="carousel-item active">
+					<img src="../images/pic1.jpg" alt="Pic 1 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>CBS 21's One-Time Pizza Competition</h3>
+					  <p>Thatz'a Pizza was the viewers' choice in CBS 21's pizza competition, beating out restaurants that have a multitude of locations and are decades older. We could not be more thankful to our community for supporting our small business.</p>
+					</div>
+				  </div>
+
+				  <div class="carousel-item">
+					<img src="../images/pic2.jpg" alt="Pic 2 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>The Sicilian</h3>
+					  <p>A true classic to any pizza shop, we let our Sicilian crusts rise for over six hours to give you that thick but airy crust you crave.</p>
+					</div>
+				  </div>
+				
+				  <div class="carousel-item">
+					<img src="../images/pic3.jpg" alt="Pic 3 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>The Buffalo Chicken Salad</h3>
+					  <p>Made fresh to order, our buffalo chicken salad is a fan favorite. Our chicken is marinated in our homemade Greek dressing and grilled fresh upon ordering, never par-cooked in advance, for the finest of flavors.</p>
+					</div>
+				  </div>
+				  
+				  <div class="carousel-item">
+					<img src="../images/pic4.jpg" alt="Pic 4 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>The Meats</h3>
+					  <p>The choice meats we purchase make our meat lovers pizza a cut above the rest. <i>Fontanini</i>, a supreme, Italian meats company, supplies the highest quality products available.</p>
+					</div>
+				  </div>
+
+				  <div class="carousel-item">
+					<img src="../images/pic5.jpg" alt="Pic 5 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>The Classic Italian</h3>
+					  <p>A true Italian sub is never without Genoa salami. Paired with vegetables straight from local farms and produce pickers, you won't find a fresher tasting sub.</p>
+					</div>
+				  </div>
+
+				  <div class="carousel-item">
+					<img src="../images/pic6.jpg" alt="Pic 6 Alt Text" width="1280" height="853">
+					<div class="carousel-caption">
+					  <h3>The Zeppole</h3>
+					  <p>Just like from Nonna's kitchen, our Italian doughnuts are a great end to a perfect meal.</p>
+					</div>
+				  </div>				  
+			  
+				</div>
+
+				<!-- left and right controls -->
+				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				  <span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+				</a>
+			  </div>
+			<!-------------------Carousel ends ----------------------------> 
+	
+			</div> <!-- end single column -->
+		</div> <!-- end row 2 -->
+				
+		<div class="row"> <!-- row 3, 1x12 cols wide, like header in HTML5 --> 
+			<div class="col-sm-12">
+				<h3>Thatz'a Pizza</h3>
+				<p class="subhead">Thatz'a Quality - Thatz'a Promise</p>
+			</div>
+		</div> <!-- end row 3 -->
+		
+	</div> <!-- end container-fluid -->
+	
+
+</body>
+
+</html>

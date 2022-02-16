@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	template.htm
+	Copyright (c) 2020 by Jacquelyn Michele Cieri
+	All Rights Reserved
+	
+	A website assignment using Bootstrap 4.1.3
+	for course WEB125, HTML & CSS, at
+	HACC - Central Pennsylvania's Community College
+	Professor Carl R. Petersheim, M.S.
+-->
+
+<head>
+<title>Thatz'a Pizza - Menu</title>
+<!--
+    remember to change page title
+-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 3.3.1 Latest jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!-- 1.14.3 Latest Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+	<!-- Bootstrap v4.1.3 Latest compiled and minified CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Bootstrap v4.1.3 Complete JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap v4.1.3 Complete JavaScript Bundle -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+	 
+ 
+	<link rel="stylesheet" href="../styles/overrides.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">  
+</head>
+<body>
+	<div class="container-fluid"> <!-- Corresponds to <main> tag in HTML5 -->
+	
+		<div class="row"> <!-- row 1, 1x12 cols wide, like header in HTML5 --> 
+			<div class="col-sm-12">
+				<h1>Thatz'a Pizza</h1>
+				<p class="subhead">Thatz'a Quality - Thatz'a Promise</p>
+			</div>
+		</div> <!-- end row 1 -->
+	
+		<nav class="navbar navbar-expand-md">
+              
+  <!-- Brand -->
+          <a class="navbar-brand" href="#">
+              <img src="../images/logo-nosubheading.png" alt="Logo" style="width:250px;">
+          </a>
+
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto float-right text-right pr-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.htm">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menu" data-toggle="dropdown">Thatz'a Menu</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item active" href="ulist.htm">Menu</a>
+                    <a class="dropdown-item" href="table.htm">Catering Menu</a>
+                 </div>
+               </li>
+                
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="difference" data-toggle="dropdown">Thatz'a Difference</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="olist.htm">Quality Care</a>
+                    <a class="dropdown-item" href="gallery.htm">Gallery</a>
+                 </div>
+              </li>
+                
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="us" data-toggle="dropdown">Thatz'a Us</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="about.htm">Our Pizza Flippin' Background</a>
+                    <a class="dropdown-item" href="video.htm">Check Our Skills</a>
+                    <a class="dropdown-item" href="form.htm">Contact Us</a>
+                 </div>
+               </li>
+                
+            </ul>
+          </div>
+       </nav>
+    
+			
+		<div class="row"> <!-- row 2, 3x4 cols wide, like HMTL5 section -->
+			<div class="col-sm-4"> <!-- left column, like HTML5 article -->
+				<h2>Thatz'a Tradition</h2>
+                <p><img src="../images/menu.jpg" class="img-left-align-100"></p>
+				<p>We've built our menu to honor the classics while still introducing new concepts to the Camp Hill area. Our first specialty was the Tomato Pie, which is still our favorite menu baby to this day. While exceedingly popular in the Philadelphia region, we've found it's nearly unheard of in central PA. The Tomato Pie is closer to what a traditional pizza in Italy is, with a strong emphasis on tomatoes and fresh spices, with only a minimal amount of cheese, and it is something we serve proudly.</p>
+                <p>While we don’t delve too much into the dessert area, we brought another Italian tradition to our menu, the Zeppole. Zeppoles are Italian doughnuts, and, while they vary from restaurant to restaurant in how they may come, we offer three flavor options: chocolate filled, blueberry filled, and plain. Using our homemade pizza dough, we deep-fry these items to a golden crisp and coat them in powdered sugar. They are the perfect way to end a meal. </p>
+			</div> <!-- end left column -->
+			
+            
+            <div class="col-sm-4"> <!-- middle column, like HTML5 article -->
+				<h2>Thatz'a Menu</h2>
+                <ul style="list-style-type:none;">
+                    <li>
+                        <a class="btn" data-toggle="collapse" href="#apps">Appetizers</a>
+                        <div id="apps" class="collapse show">
+                            <ul>
+                                <li>French Fries
+                                    <ul type="disc">
+                                    <li class="pizzalist">With Cheese</li>
+                                    <li class="pizzalist">With Cheese and Bacon</li>
+                                    </ul>
+                                </li>
+                                <li>Chicken Fritters</li>
+                                <li>Mozzarella Sticks</li>
+                                <li>Fried Ravioli</li>
+                                <li>Fried Pickles</li>
+                                <li>Fried Mushrooms</li>
+                                <li>Onion Rings</li>
+                                <li>Breadsticks</li>
+                                <li>Wings</li>
+                             </ul>
+                        </div>
+                    </li>
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#salads">Salads</a>
+                          <div id="salads" class="collapse">
+                             <ul>
+                                <li>Side Salad</li>
+                                <li>House Salad</li>
+                                <li>Greek Salad
+                                    <ul type="disc">
+                                        <li class="pizzalist">With Chicken</li>
+                                        <li class="pizzalist">With Shrimp</li>
+                                    </ul>
+                                </li>
+                                <li>Caesar Salad
+                                    <ul type="disc">
+                                        <li class="pizzalist">With Chicken</li>
+                                        <li class="pizzalist">With Shrimp</li>
+                                    </ul>
+                                </li>
+                                <li>Grilled Chicken Salad</li>
+                                <li>Buffalo Chicken Salad</li>
+                                <li>Steak Salad</li>
+                                <li>Tuna Salad</li>
+                                <li>Italian Salad</li>
+                                <li>Chef Salad</li>
+                                <li>Turkey Salad</li>
+                             </ul>
+                           </div>
+                    </li>
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#pizza">Pizza</a>
+                          <div id="pizza" class="collapse">
+                             <ul>
+                                 <li>Toppings<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Extra&nbsp;Cheese <span class="symbol">&#9679;</span>&nbsp;Fresh&nbsp;Basil <span class="symbol">&#9679;</span>&nbsp;Fresh&nbsp;Garlic <span class="symbol">&#9679;</span>&nbsp;Pepperoni <span class="symbol">&#9679;</span>&nbsp;Sausage <span class="symbol">&#9679;</span>&nbsp;Spicy&nbsp;Sausage <span class="symbol">&#9679;</span>&nbsp;Ham <span class="symbol">&#9679;</span>&nbsp;Bacon <span class="symbol">&#9679;</span>&nbsp;Salami <span class="symbol">&#9679;</span>&nbsp;Anchovy <span class="symbol">&#9679;</span>&nbsp;Chicken <span class="symbol">&#9679;</span>&nbsp;Steak <span class="symbol">&#9679;</span>&nbsp;Ground&nbsp;Beef <span class="symbol">&#9679;</span>&nbsp;Meatball <span class="symbol">&#9679;</span>&nbsp;Broccoli <span class="symbol">&#9679;</span>&nbsp;Black&nbsp;Olive <span class="symbol">&#9679;</span>&nbsp;Mushroom <span class="symbol">&#9679;</span>&nbsp;Onion <span class="symbol">&#9679;</span>&nbsp;Green&nbsp;Pepper <span class="symbol">&#9679;</span>&nbsp;Banana&nbsp;Pepper <span class="symbol">&#9679;</span>&nbsp;Tomato <span class="symbol">&#9679;</span>&nbsp;Pineapple</span></li>
+                                 <li>Tomato Pie</li>
+                                 <li>Sicilian</li>
+                                 <li>Thatz'a Sicilian</li>
+                                 <li>White Pizza<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Thatz'a Pizza<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Meat Lovers<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Veggie<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Hawaiian<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Caprese<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Greek<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Chicken Caesar<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Buffalo Chicken<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Chicken or Steak Bacon Ranch<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Honey Mustard Chicken<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                                 <li>Taco<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Medium <span class="symbol">&#9679;</span>&nbsp;Large <span class="symbol">&#9679;</span>&nbsp;Gluten-Free</span></li>
+                             </ul>
+                           </div>
+                    </li> 
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#stromboli">Strombolis</a>
+                          <div id="stromboli" class="collapse">
+                             <ul>
+                                 <li>Traditional<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>Veggie<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>Steak &#38; Onion<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>Thatz'a Boli<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>VerBoli<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                             </ul>
+                           </div>
+                    </li> 
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#calzone">Calzones</a>
+                          <div id="calzone" class="collapse">
+                             <ul>
+                                 <li>Cheese<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>Veggie<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>Ham<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>Eggplant<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                             </ul>
+                           </div>
+                    </li> 
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#pretzel">Pretzel Bolis</a>
+                          <div id="pretzel" class="collapse">
+                             <ul>
+                                 <li>Traditional<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>Cieri's Cheeseburger<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                                 <li>Shane's Steak<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small <span class="symbol">&#9679;</span>&nbsp;Large</span></li>
+                             </ul>
+                           </div>
+                    </li> 
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#cold">Cold Subs &#38; Wraps</a>
+                          <div id="cold" class="collapse">
+                             <ul>
+                                 <li>Italian</li>
+                                 <li>Spicy Italian</li>
+                                 <li>Turkey &#38; Cheese</li>
+                                 <li>Ham &#38; Cheese</li>
+                                 <li>Club</li>
+                                 <li>Tuna &#38; Cheese</li>
+                                 <li>BLT</li>
+                                 <li>Veggie</li>
+                                 <li>Cheese</li>
+                             </ul>
+                           </div>
+                    </li>
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#wraps">Specialty Wraps</a>
+                          <div id="wraps" class="collapse">
+                             <ul>
+                                 <li>Buffalo Chicken</li>
+                                 <li>Chicken Caesar</li>
+                                 <li>Turkey Club</li>
+                                 <li>Greek</li>
+                             </ul>
+                           </div>
+                    </li>
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#hot">Hot Subs</a>
+                          <div id="hot" class="collapse">
+                             <ul>
+                                 <li>Fish</li>
+                                 <li>Cheeseburger</li>
+                                 <li>Cheesesteak</li>
+                                 <li>California Cheesesteak</li>
+                                 <li>Thatz'a Cheesesteak</li>
+                                 <li>Chicken Cheesesteak</li>
+                                 <li>California Chicken Cheesesteak</li>
+                                 <li>Thatz'a Chicken Cheesesteak</li>
+                                 <li>Pizzasteak</li>
+                                 <li>Meatball &#38; Cheese</li>
+                                 <li>Sausage &#38; Cheese</li>
+                                 <li>Eggplant Parmesan</li>
+                                 <li>Chicken Parmesan</li>
+                                 <li>Crispy Chicken</li>
+                                 <li>Buffalo Chicken</li>
+                                 
+                             </ul>
+                           </div>
+                    </li>
+                    <li>
+                         <a class="btn" data-toggle="collapse" href="#dessert">Dessert</a>
+                          <div id="dessert" class="collapse">
+                             <ul>
+                                 <li>Zeppole<br>
+                                     <span class="pizzalist"><span class="symbol">&#9679;</span>&nbsp;Small (4) <span class="symbol">&#9679;</span>&nbsp;Large (16)</span></li>
+                             </ul>
+                           </div>
+                    </li>
+                 </ul>
+			</div> <!-- end middle column -->
+            
+            
+			<div class="col-sm-4"> <!-- right column, like HTML5 article -->
+				<h2>Thatz'a Specialty</h2>
+                <p><img src="../images/verboli2.jpg" class="img-left-align-100"></p>
+				<p>A few years into business, we created the Verboli – a calzone with buffalo chicken, bacon, fresh basil, and ranch dressing – combining some of our favorite flavors. We also introduced the Honey Mustard Chicken Pizza after testing it out with one of our customers, and it’s been a huge success!</p>
+                <p>Our most recent addition to our menu has been the Pretzel Bolis after we collaborated with another independent pizzeria owner in the York area to bring the concept here. We started with the classic, ham and cheese, and began testing out flavors from there. We invited our customers to brainstorm with us as we tentatively introduced this to our menu. As such, one of our Pretzel Bolis, arguably our most popular variation, is named after one of our favorite, long-standing customers, Shane, and his concoction, the Shane’s Steak. Try one today!</p>
+			</div> <!-- end right column -->
+		</div> <!-- end row 2 -->
+				
+		<div class="row"> <!-- row 3, 1x12 cols wide, like header in HTML5 --> 
+			<div class="col-sm-12">
+				<h3>Thatz'a Pizza</h3>
+				<p class="subhead">Thatz'a Quality - Thatz'a Promise</p>
+			</div>
+		</div> <!-- end row 3 -->
+		
+	</div> <!-- end container-fluid -->
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+/* 
+	template.css
+	Copyright (c) 2020 by Jacquelyn Michele Cieri
+	All Rights Reserved
+	
+	A website assignment using Bootstrap 4.1.3
+	for course WEB125, HTML & CSS, at
+	HACC - Central Pennsylvania's Community College
+	Professor Carl R. Petersheim, B.S.Ed., M.S.
+*/
+/*  Color pallet..............................................
+#010101 - black
+#db212f - red
+#058c54 - green
+#222221 - grey
+#f0f2f0 - white
+
+
+
+*/
+/* 	Tag Selector Section......................................*/
+
+body {
+	background-image: url("../images/bgd3.gif");
+    background-size: 100% 100%;
+
+}
+h1 {
+    color: #db212f;
+    font-weight: 800;
+}
+
+h2 {
+    color: #db212f;
+    font-weight: 600;
+}
+
+h3 {
+    color: #db212f;
+    font-weight: 600;
+}
+
+
+ul li a {
+    color: #058c54;
+}
+
+ul li a:hover {
+    color: #058c54;
+}
+
+ol li {
+    margin-bottom: 25px;
+}
+
+ol li:first-child {
+    margin-bottom: 15px;
+}
+
+td {
+	text-align: center;
+}
+thead {
+	text-align: center;
+    
+}
+tfoot {
+	font-size: .75em;
+	font-style: italic;
+}
+
+
+legend {
+    font-size: 1em;
+}
+
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+select {
+    width: 250px;
+    font-size: .75em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+fieldset label {
+    font-size: .75em;
+}
+
+::placeholder {
+  font-size: .75em;
+}
+
+
+/*	Class Selector Section...................................*/
+
+.container-fluid {
+    color: #f0f2f0;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+	width: 90%;
+    background-color: #010101;
+}
+
+
+.img-left-align-100 {
+    display: block;
+    text-align: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.subhead {
+    color: #058c54;
+    font-weight: 600;
+}
+
+.col-sm-4 h2 {
+    text-align: center;
+}
+
+.symbol {
+    font-size: .5em;
+}
+
+.pizzalist {
+    font-size: .75em;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin-top: 0;
+    width: 175px;
+}
+
+.nav-item
+{
+   color: #058c54;
+   font-size: 20px;
+}
+
+.dropdown-item {
+    background-color: #010101;
+    color: #058c54;
+    font-size: .95em;
+    text-align: right;
+    white-space: normal;
+}
+.nav-item.active .nav-link {
+   color: #db212f; 
+}
+
+.nav-item .dropdown-item.active {
+   color: #db212f;
+    background-color: #010101;
+}
+
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #db212f;
+}
+
+.navbar-toggler .line{
+width: 100%;
+float: left;
+height: 2px;
+background-color: #f0f2f0;
+margin-bottom: 5px;
+}
+
+.btn:focus,.btn:active {
+   box-shadow: none; 
+    border:2px solid #db212f;
+    padding:7px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline-style: none;
+}
+
+.mla {
+    padding-left: 48px!important;
+    text-indent: -48px!important;
+}
+
+/*	ID Selector Section......................................*/
+
+#unique {
+
+}
+
+@media all and (max-width: 992px) {
+    .carousel-caption h3 { 
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        
+    }
+    .carousel-caption p { 
+        font-size: 12px;
+    }
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #f0f2f0;}
+	.navbar .nav-item:hover .dropdown-menu{ display: block}
+    .navbar .nav-item .dropdown-menu .dropdown-item:hover{ color: #f0f2f0; background-color: #010101;}
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
